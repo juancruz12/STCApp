@@ -24,7 +24,7 @@ public class UserController {
     }
 
     @GetMapping("/admin")
-    @PreAuthorize("hasAuthority('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String endpointAdmin() {
         return "SOS ADMIN";
     }
